@@ -40,9 +40,8 @@ if response.status_code == 200:
 else:
     print(f'erro: {response.status_code}')
 
-##
-# REVER ESSA AULA E ENTENDER MELHOR
-##
+
+# itera sobre os dados do dicionario do restaurante e cria arquivos json de cada restaurante com os dados respectivos deles
 for nome_do_restaurante, dados in dados_restaurante.items():
     nome_do_arquivo = f'{nome_do_restaurante}.json'
     with open(nome_do_arquivo, 'w') as arquivo_restaurante:
